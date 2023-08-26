@@ -7,10 +7,21 @@
   width: 100%;
 }
 
-.problemCard {
+.problem {
   border: solid 2px #f3f1f4;
   border-radius: 8px;
+  width: 100%;
   padding: 20px;
   margin-bottom: 20px;
+  background: white;
+}
+
+.solving {
+  border: solid 2px #f3f1f4;
+  border-radius: 8px;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  height: 200px;
   background: white;
 }

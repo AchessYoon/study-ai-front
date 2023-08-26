@@ -8,7 +8,8 @@ export default function Home() {
   return (
     <>
       <div className={styles.leftSection}>
-        <div className={styles.problemCard}>{problem}</div>
+        <div className={styles.problem}>{problem}</div>
+        <textarea className={styles.solving}/>
         <AnswerInput />
       </div>
       <div className={styles.rightSection}>
