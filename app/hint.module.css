@@ -1,27 +1,16 @@
 .hint {
   border: solid 2px #f3f1f4;
   border-radius: 8px;
-  /* width: 500px; */
   width: 100%;
   padding: 20px;
   margin-bottom: 5px;
   background: white;
 } 
 
-/* .hintSummary::-webkit-details-marker {
-  display:none;
-} */
-/* .hint > summary {
-  list-style: none;
-}
-.hint > summary::-webkit-details-marker {
-  display: none;
-} */
-
 .hintSummary {
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: space-between; */
+  cursor: pointer;
   list-style: none;
 }
 
@@ -55,10 +44,6 @@
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
-
-/* details {
-  cursor: pointer;
-} */
 
 .detailsWrapper {
   overflow: hidden;
