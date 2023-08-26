@@ -1,4 +1,5 @@
 import styles from './page.module.css'
+import Link from 'next/link'
 import Hint from './Hint'
 import AnswerInput from './AnswerInput'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -14,10 +15,10 @@ export default function Home() {
         <textarea className={styles.solving}/>
         <div className={styles.bottomSection}>
           <AnswerInput />
-          <button className={styles.uploadNew}>
+          <Link className={styles.uploadNew} href="/upload">
             <FontAwesomeIcon icon={faUpload}/>
             새 문제
-          </button>
+          </Link>
         </div>
       </div>
       <div className={styles.rightSection}>

@@ -31,12 +31,14 @@
 }
 
 .uploadNew {
-  border: solid 2px #dbdbdb;
+  border: solid 2px #e5e3e6;
   border-radius: 8px;
   margin-left: auto;
   padding: 0 10px;
   height: 40px;
   background-color: #dbdbdb;
+  color: black;
+  text-decoration: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,6 +46,6 @@
 }
 
 .uploadNew:hover {
-  border: solid 2px #cbcbcb;
+  border: solid 2px #e5e3e6;
   background-color: #cbcbcb;
 }
