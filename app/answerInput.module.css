@@ -1,0 +1,36 @@
+.answer {
+  border: solid 2px #f3f1f4;
+  border-radius: 8px;
+  width: 50%;
+  height: 40px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.input {
+  margin-left: 10px;
+  height: 20px;
+  line-height: 20px;
+  border: none;
+  outline: none !important;
+}
+
+.submitWrapper {
+  margin-left: auto;
+  height: 100%;
+}
+
+.submitButton {
+  transition: 0.2s;
+  height: 100%;
+  border: none;
+  background-color: #dbdbdb;
+  width: 40px;
+}
+
+.submitButton:hover {
+  background-color: #cbcbcb;
+}
