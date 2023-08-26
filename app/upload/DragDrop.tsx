@@ -11,13 +11,12 @@ export default function DragDrop() {
         setFile(file);
     };
     useEffect(()=>{
-        // console.log(document.getElementsByTagName("label")[0]?.children[2].children[1].innerHTML)
         (document.getElementsByTagName("label")[0]?.children[2].children[1] as any)?.style.setProperty("max-width", "none")
     })
     return (
         <>
         <div className={styles.dragDrop}>
-        <FileUploader handleChange={handleChange} name="file" types={fileTypes} id={"dragDrop"}/>
+        <FileUploader handleChange={handleChange} name="file" types={fileTypes} multiple={false}/>
         </div>
         </>
     );
