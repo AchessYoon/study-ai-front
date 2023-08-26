@@ -19,12 +19,12 @@
 }
 
 .circle {
-  height: 20px;
-  width: 20px;
+  height: 16px;
+  width: 16px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 7px;
 }
 
 .arrowWapper {
@@ -37,8 +37,8 @@
 
 .arrow {
   border: solid black;
-  border-width: 0 3px 3px 0;
-  padding: 3px;
+  border-width: 0 2.4px 2.4px 0;
+  padding: 2.4px;
   margin-bottom: 2px;
 
   transform: rotate(45deg);
