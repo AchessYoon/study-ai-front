@@ -9,7 +9,8 @@ export default function Home() {
       <div className={styles.problemCard}>{problem}</div>
       <div className={styles.hintsWrapper}>
         <Hint index={1}/>
-        <Hint index={1}/>
+        <Hint index={2}/>
+        <Hint index={3}/>
       </div>
     </>
   )

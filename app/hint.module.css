@@ -4,6 +4,7 @@
   /* width: 500px; */
   width: 100%;
   padding: 20px;
+  margin-bottom: 5px;
   background: white;
 } 
 
@@ -34,6 +35,7 @@
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+  margin-right: 5px;
 }
 
 .downArrow {
