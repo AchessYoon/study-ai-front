@@ -16,6 +16,11 @@
   line-height: 20px;
   border: none;
   outline: none !important;
+  caret-color: black;
+}
+
+.input:disabled {
+  background-color: transparent;
 }
 
 .submitWrapper {
@@ -33,4 +38,9 @@
 
 .submitButton:hover {
   background-color: #cbcbcb;
+}
+
+.submitButton:disabled {
+  background-color: #ebebeb;
+  color: #cbcbcb;
 }
