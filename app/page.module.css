@@ -1,7 +1,7 @@
 .problemCard {
   border: solid 2px #f3f1f4;
   border-radius: 8px;
-  width: 700px;
+  width: 100%;
   height: fit-content;
   padding: 20px;
   margin-right: 15px;
