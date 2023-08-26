@@ -3,9 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import styles from './hint.module.css'
 
-const hint = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-
-export default function Hint({title}:{title: string}) {
+export default function Hint({title, content}:{title: string, content: string}) {
     // const { summary, children } = props;
     const contentRef = useRef<HTMLDivElement>(null);
     const [contentHeight, setContentHeight] = useState(0);
@@ -27,7 +25,7 @@ export default function Hint({title}:{title: string}) {
                 {title}
             </summary>
             <div className={styles.detailsWrapper}>
-                <p className={styles.detailsContent} ref={contentRef}>{hint}</p>
+                <p className={styles.detailsContent} ref={contentRef}>{content}</p>
             </div>
         </details>
     )
