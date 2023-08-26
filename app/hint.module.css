@@ -38,16 +38,22 @@
   margin-right: 5px;
 }
 
-.downArrow {
+.arrowWapper {
+  transition: transform 0.3s;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
   border: solid black;
   border-width: 0 3px 3px 0;
-  display: inline-block;
   padding: 3px;
+  margin-bottom: 2px;
 
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  margin-left: 6px;
-  margin-bottom: 2px;
 }
 
 /* details {
@@ -69,15 +75,6 @@
   opacity: 1;
 }
 
-/* .arrow {
-  transition: transform 0.3s;
-  width: 10px;
-  height: 10px;
-  border-top: 2px solid grey;
-  border-right: 2px solid grey;
-  transform: rotate(135deg);
+.hint[open] .arrowWapper {
+  transform: rotate(180deg);
 }
-
-details[open] .arrow {
-  transform: rotate(315deg);
-} */

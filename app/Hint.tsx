@@ -23,7 +23,7 @@ export default function Hint({title}:{title: string}) {
     return (
         <details className={styles.hint}>
             <summary className={styles.hintSummary}>
-                <span className={styles.circle}><i className={styles.downArrow} /></span>
+                <span className={styles.circle}><div className={styles.arrowWapper}><i className={styles.arrow}/></div></span>
                 {title}
             </summary>
             <div className={styles.detailsWrapper}>
