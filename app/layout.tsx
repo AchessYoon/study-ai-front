@@ -1,6 +1,7 @@
 import './globals.css'
 import styles from './layout.module.css'
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Header from './Header'
 
@@ -21,6 +22,13 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         <main className={styles.main}>
+            <Image
+              src="/elicebot.png"
+              alt="Background image"
+              className={styles.backgroundImage}
+              width={707}
+              height={547}
+            />
           {children}
         </main>
       </body>
