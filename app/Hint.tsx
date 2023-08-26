@@ -4,18 +4,15 @@ import { useEffect, useRef, useState } from 'react';
 import styles from './hint.module.css'
 
 export default function Hint({title, content}:{title: string, content: string}) {
-    // const { summary, children } = props;
     const contentRef = useRef<HTMLDivElement>(null);
     const [contentHeight, setContentHeight] = useState(0);
 
     useEffect(() => {
-        console.log(contentRef?.current)
         setContentHeight(contentRef?.current?.clientHeight ?? 0);
     }, []);
 
     useEffect(() => {
         contentRef.current?.style.setProperty('--contentHeight', contentHeight + "");
-        console.log(contentHeight)
     }, [contentHeight]);
 
     return (
