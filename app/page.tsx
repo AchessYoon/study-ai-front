@@ -8,9 +8,9 @@ export default function Home() {
     <>
       <div className={styles.problemCard}>{problem}</div>
       <div className={styles.hintsWrapper}>
-        <Hint index={1}/>
-        <Hint index={2}/>
-        <Hint index={3}/>
+        <Hint title="힌트1"/>
+        <Hint title="힌트2"/>
+        <Hint title="전체 풀이"/>
       </div>
     </>
   )
