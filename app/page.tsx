@@ -5,9 +5,9 @@ const problem = "철수와 영희는 자신의 집에서 상점을 향해 동시
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <>
       <div className={styles.card}>{problem}</div>
       <Hint index={1}/>
-    </main>
+    </>
   )
 }

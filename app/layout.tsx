@@ -24,7 +24,9 @@ export default function RootLayout({
             <span>Menu1</span>
           </nav>
         </header>
-        {children}
+        <main className={styles.main}>
+          {children}
+        </main>
       </body>
     </html>
   )
