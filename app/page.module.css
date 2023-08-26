@@ -25,3 +25,25 @@
   height: 200px;
   background: white;
 }
+
+.bottomSection {
+  display: flex;
+}
+
+.uploadNew {
+  border: solid 2px #dbdbdb;
+  border-radius: 8px;
+  margin-left: auto;
+  padding: 0 10px;
+  height: 40px;
+  background-color: #dbdbdb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 7px;
+}
+
+.uploadNew:hover {
+  border: solid 2px #cbcbcb;
+  background-color: #cbcbcb;
+}
