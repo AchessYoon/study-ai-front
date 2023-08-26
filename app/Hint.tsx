@@ -23,7 +23,7 @@ export default function Hint({index}:{index:number}) {
     return (
         <details className={styles.hint}>
             <summary className={styles.hintSummary}>
-                {/* <span className={styles.circle}><i className={styles.downArrow} /></span> */}
+                <span className={styles.circle}><i className={styles.downArrow} /></span>
                 힌트{index}
             </summary>
             <div className={styles.detailsWrapper}>
