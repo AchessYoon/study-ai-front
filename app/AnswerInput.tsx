@@ -3,8 +3,7 @@
 import { ChangeEvent, useEffect, useState } from 'react'
 import styles from './answerInput.module.css'
 
-export default function AnswerInput() {
-  const answer = "42"
+export default function AnswerInput({answer}:{answer: string}) {
   const colorMap = {
     "neutral": "black",
     "right": "#36ba72",
