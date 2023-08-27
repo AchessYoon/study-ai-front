@@ -16,6 +16,7 @@ const hint = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ei
 export default async function Home() {
   const {fileName, fileEncodedBase64} = useGetFile()
   const router = useRouter()
+  console.log(fileName)
   if(fileName) {
     console.log(JSON.stringify({filename: fileName, fileEncodedBase64}))
     try {
