@@ -25,8 +25,10 @@ export default async function Home() {
       })
       const { hint1 } = await res.json()
       console.log(hint1)
-    } catch {
-      router.push("/upload")
+    } catch (e) {
+      console.log(e)
+      // router.push("/upload")
+
     }
   }
   
