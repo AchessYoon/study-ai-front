@@ -34,7 +34,7 @@ export default function Home() {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({filename: fileName, fileEncodedBase64, isText})
-        }).then((res)=>{res.json().then((j)=>{setResJson({hint1: "string", hint2: "string", hint3: "string", answer: "string", problemText: "$e^+e^-$, gluon-gluon and $\\gamma\\gamma \\to W t\\bar b$"})})})
+        }).then((res)=>{res.json().then((j)=>{setResJson(j)})})
       } catch (e) {
         console.log(e)
         // router.push("/upload")
