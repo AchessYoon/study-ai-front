@@ -17,10 +17,10 @@ export default function DragDrop() {
         var reader = new FileReader();
         reader.readAsDataURL(file);
         reader.onload = function () {
-            setContextFile({fileName: file.name, fileEncodedBase64: reader.result});
+            setContextFile({fileName: file.name, fileEncodedBase64: reader.result, isText: fileType});
             router.push("/");
         };
-    },[file, router, setContextFile]);
+    },[file, fileType, router, setContextFile]);
     const handleTypeChange = useCallback((e: any) => {
         setFileType(e.target.checked);
     }, [setFileType])

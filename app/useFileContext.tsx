@@ -2,11 +2,11 @@
 
 import { PropsWithChildren, createContext, useContext, useState } from "react";
 
-const FileCtx = createContext([{fileName: "", fileEncodedBase64: null}, ()=>{}] as [{fileName: string, fileEncodedBase64: string | ArrayBuffer | null}, (p:{fileName: string, fileEncodedBase64: string | ArrayBuffer | null})=>void])
+const FileCtx = createContext([{fileName: "", fileEncodedBase64: null, isText: false}, ()=>{}] as [{fileName: string, fileEncodedBase64: string | ArrayBuffer | null, isText:boolean}, (p:{fileName: string, fileEncodedBase64: string | ArrayBuffer | null, isText: boolean})=>void])
 
 export function useSetFile() {
     const [, s] = useContext(FileCtx)
-    return  ({fileName, fileEncodedBase64}:{fileName: string, fileEncodedBase64: string | ArrayBuffer | null})=>{s({fileName, fileEncodedBase64})}
+    return  ({fileName, fileEncodedBase64, isText}:{fileName: string, fileEncodedBase64: string | ArrayBuffer | null, isText: boolean})=>{s({fileName, fileEncodedBase64, isText})}
 }
 
 export function useGetFile() {
@@ -15,7 +15,7 @@ export function useGetFile() {
 }
 
 export default function Ctx({children}: PropsWithChildren) {
-    const [t, setT] = useState<{fileName: string, fileEncodedBase64: string | ArrayBuffer | null}>({fileName: "", fileEncodedBase64: null})
+    const [t, setT] = useState<{fileName: string, fileEncodedBase64: string | ArrayBuffer | null, isText: boolean}>({fileName: "", fileEncodedBase64: null, isText: false})
     return <FileCtx.Provider value={[t, setT]}>
         {children}
     </FileCtx.Provider>

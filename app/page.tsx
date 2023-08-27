@@ -14,7 +14,7 @@ const problem = "철수와 영희는 자신의 집에서 상점을 향해 동시
 const hint = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
 
 export default function Home() {
-  const {fileName, fileEncodedBase64} = useGetFile()
+  const {fileName, fileEncodedBase64, isText} = useGetFile()
   const router = useRouter()
   const [resJson, setResJson] = useState<{ hint1: string, hint2: string, hint3: string, answer: string, problemText: string}|null>()
   console.log(fileName)
@@ -30,7 +30,7 @@ export default function Home() {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
           },
-          body: JSON.stringify({filename: fileName, fileEncodedBase64})
+          body: JSON.stringify({filename: fileName, fileEncodedBase64, isText})
         }).then((res)=>{res.json().then((j)=>{setResJson(j)})})
       } catch (e) {
         console.log(e)
