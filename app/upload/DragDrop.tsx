@@ -24,10 +24,12 @@ export default function DragDrop() {
         (document.getElementsByTagName("label")[0]?.children[2].children[1] as any)?.style.setProperty("max-width", "none")
     })
     return (
-        <>
         <div className={styles.dragDrop}>
-        <FileUploader handleChange={handleChange} name="file" types={fileTypes} multiple={false}/>
+            <FileUploader handleChange={handleChange} name="file" types={fileTypes} multiple={false}/>
+            <label>
+                <input role="switch" type="checkbox" />
+                <span>알람</span>
+            </label>
         </div>
-        </>
     );
 }
