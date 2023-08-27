@@ -22,6 +22,10 @@ export default async function Home() {
     try {
       const res = await fetch("http://15.164.81.24:8080/api/sample",{
         method: "POST",
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
         body: JSON.stringify({filename: fileName, fileEncodedBase64})
       })
       const { hint1 } = await res.json()
